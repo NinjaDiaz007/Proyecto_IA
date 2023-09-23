@@ -8,6 +8,7 @@
 /*=========== Paleta de Color claro ===========*/
 /*=============================================*/
 .claro{
+    transition: all .5s ease;
     background-color: white;
 }
 .claro .fon-1{
@@ -19,15 +20,42 @@
 .claro .link-1:hover{
     color: var(--azul);
 }
+
+.claro .lbl-switch{
+    background-color: var(--azul);
+}
+.claro #switch:checked ~ .lbl-switch{
+    background-color: var(--naranja);
+}
 /*=============================================*/
 
 /*=============================================*/
 /*=========== Paleta de Color oscuro ==========*/
 /*=============================================*/
 .oscuro{
-    background-color: white;
+    background-color: #3b3b3b;
+    transition: all .5s ease;
+    color: white;
 }
 .oscuro .fon-1{
-    
+    background-color: #1b1b1b;
+}
+
+.oscuro .link-1{
+    color: white;
+}
+.oscuro .link-1:hover{
+    color: var(--azul);
+}
+
+.oscuro .lbl-switch{
+    background-color: var(--azul);
+}
+.oscuro #switch:checked ~ .lbl-switch{
+    background-color: var(--naranja);
+}
+
+.oscuro .borde{
+    border: 1px solid white;
 }
 /*=============================================*/

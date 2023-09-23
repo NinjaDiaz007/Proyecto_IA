@@ -10,7 +10,7 @@
         <link rel="icon" href="./img/ITT_Logo.jpg">
     </head>
 
-    <body class="claro">
+    <body class="claro" id="body">
         <section class="hero">
             <img src="./img/particulas.gif" alt="">
             <div class="texto">
@@ -20,8 +20,13 @@
 
         <header class="fon-1">
             <nav class="nav-hor">
-                <a href="#" class="link-1">Inicio</a>
-                <a href="#" class="link-1">Block</a>
+                <div class="enlaces">
+                    <a href="#" class="link-1">Inicio</a>
+                    <a href="#" class="link-1">Block</a>
+                </div>
+                
+                <input type="checkbox" class="none" id="switch">
+			    <label class="lbl-switch" for="switch"></label>
             </nav>
         </header>
 
@@ -31,8 +36,28 @@
                 No sabes que estudis a continuaci&#243;n con el test vocacional podar ver 
                 que carreras son mas adecuadas para ti.
             </p>
+
+            <div class="pregunta borde">
+                <h2>Te gustan las matemáticas?</h2>
+                <div class="respuesta">
+                    <button>SI</button>
+                    <button>NO</button>
+                </div>
+            </div>
+
+            <div class="pregunta borde">
+                <h2>Te gustan las matemáticas?</h2>
+                <div class="respuesta">
+                    <input type="radio" name="matematicas" id="si">
+                    <label for="si">SI</label>
+                    
+                    <input type="radio" name="matematicas" id="no">
+                    <label for="no">NO</label>
+                </div>
+            </div>
         </main>
 
         <script src="./js/main.js"></script>
+        <script src="./js/switch.js"></script>
     </body>
 </html>
