@@ -83,37 +83,65 @@
     max-width: 1200px;
     margin: 15px auto;
 }
-.main .pregunta{
+.main .preguntas{
     width: 100%;
     padding: 15px;
     border: 1px solid black;
     border-radius: 5px;
     margin-top: 10px;
 }
-.main .pregunta .respuesta{
+.main .preguntas .respuesta{
     display: flex;
     align-items: center;
 }
-.main .pregunta .respuesta button{
+.main .preguntas .respuesta button{
     width: 60px;
     font-size: 18px;
     margin-top: 10px;
     margin-right: 15px;
     padding: .2rem 1rem;
 }
-.main .pregunta .respuesta input[type=radio],
-.main .pregunta .respuesta label{
+.main .preguntas .respuesta input[type=radio],
+.main .preguntas .respuesta label{
     margin-top: 10px;
 }
-.main .pregunta .respuesta label{
+.main .preguntas .respuesta label{
     font-size: 18px;
     margin-right: 15px;
     margin-left: 2px;
 }
+
+.main .cont_slider .control{
+    display: flex;
+    margin-top: 15px;
+    width: 100%;
+    justify-content: space-evenly;
+}
+.main .cont_slider .control button{
+    padding: .4rem 1rem;
+    font-size: 18px;
+}
 /*=============================================*/
+
 /*=============================================*/
+/*=========== Slider de Preguntas =============*/
 /*=============================================*/
-/*=============================================*/
+.cont_slider{
+    width: 100%;
+	overflow: hidden;
+	position: relative;
+}
+.cont_slider .slide{
+    width: 100%;
+	display: flex;
+}
+.cont_slider .slide .slider{
+    width: 100%;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	flex-shrink: 0;
+}
 /*=============================================*/
 /*=============================================*/
 /*=============================================*/
