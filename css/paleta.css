@@ -14,11 +14,19 @@
 .claro .fon-1{
     background-color: var(--morado);
 }
+
 .claro .link-1{
     color: white;
 }
 .claro .link-1:hover{
     color: var(--azul);
+}
+.claro .link-2{
+    background-color: var(--morado);
+    color: white;
+}
+.claro .link-2:hover{
+    background-color: var(--naranja);
 }
 
 .claro .lbl-switch{
@@ -46,6 +54,13 @@
 }
 .oscuro .link-1:hover{
     color: var(--azul);
+}
+.oscuro .link-2{
+    background-color: var(--naranja);
+    color: white;
+}
+.oscuro .link-2:hover{
+    background-color: var(--azul);
 }
 
 .oscuro .lbl-switch{

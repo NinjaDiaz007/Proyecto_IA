@@ -1,7 +1,7 @@
 let cont_preguntas = document.getElementById("cont-preguntas");
 let siguiente = document.getElementById("siguiente");
 let anterior = document.getElementById("anterior");
-let texto = document.querySelectorAll(".txt");
+let guardar_enviar = document.getElementById("enviar");
 
 let slider = document.querySelector(".slide");
 let sliderIndividual = document.querySelectorAll(".slider");
@@ -9,9 +9,9 @@ let contador = 1;
 let ancho = sliderIndividual[0].clientWidth;
 
 let preguntas = [
-    {text:"¿Te gustan las matemáticas?"},
-    {text:"¿Disfrutas resolviendo problemas de programación?"},
-    {text:"¿Eres bueno/a en ciencias?"}/*,
+    "¿Te gustan las matemáticas?",
+    "¿Disfrutas resolviendo problemas de programación?",
+    "¿Eres bueno/a en ciencias?",
     "¿Te interesan las artes visuales?",
     "¿Disfrutas trabajando con personas?",
     "¿Prefieres trabajar en equipo o individualmente?",
@@ -64,7 +64,7 @@ let preguntas = [
      "¿Te atrae la idea de evaluar el impacto ambiental de tus proyectos?",
      "¿Eres bueno en la gestión de recursos y presupuestos de construcción?",
      "¿Disfrutas de la ingeniería electromecánica y la integración de sistemas?",
-     "¿Sientes una pasión por el diseño y mantenimiento de equipos industriales?"*/
+     "¿Sientes una pasión por el diseño y mantenimiento de equipos industriales?"
     ];
 
 // Eventos por Click
@@ -72,7 +72,13 @@ siguiente.addEventListener("click", ()=>{
     if(contador < sliderIndividual.length){
 		slider.style.transform = "translate("+(-ancho*contador)+"px)";
 	    slider.style.transition = "transform .8s";
-	    contador++;
+        contador++;
+        
+        if(contador === 6){
+            anterior.classList.add("none");
+            siguiente.classList.add("none");
+            guardar_enviar.classList.remove("none");
+        }
 	}
 });
 anterior.addEventListener('click', ()=>{
@@ -82,12 +88,27 @@ anterior.addEventListener('click', ()=>{
 	    slider.style.transition = "transform .8s";
 	}
 });
+guardar_enviar.addEventListener('click', ()=>{
+    if(contador === 6){
+        console.log(contador);
+        contador = 1;
+        slider.style.transform = "translate("+(-ancho*contador)+"px)";
+        slider.style.transition = "transform .8s";
+        anterior.classList.remove("none");
+        siguiente.classList.remove("none");
+        guardar_enviar.classList.add("none");
+    }
+    
+});
 
 // Funciones
 function PreguntasPantalla(){
-    for(let i = 0; i <= 3; i++){
-        texto.innerHTML = preguntas[0].text;
-        console.log(pregunta[i]);
+    let i;
+    let texto = document.querySelectorAll(".txt");
+    
+    for(i = 0; i <= preguntas.length; i++){
+        texto[i].innerHTML = preguntas[i];
+        //console.log(`Pregunta: ${preguntas[i]}`);
     }
 }
 PreguntasPantalla();

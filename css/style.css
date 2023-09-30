@@ -84,11 +84,11 @@
     margin: 15px auto;
 }
 .main .preguntas{
-    width: 100%;
+    width: 99%;
     padding: 15px;
     border: 1px solid black;
     border-radius: 5px;
-    margin-top: 10px;
+    margin: 10px auto 0 auto;
 }
 .main .preguntas .respuesta{
     display: flex;
@@ -111,13 +111,13 @@
     margin-left: 2px;
 }
 
-.main .cont_slider .control{
+.main .control{
     display: flex;
     margin-top: 15px;
     width: 100%;
     justify-content: space-evenly;
 }
-.main .cont_slider .control button{
+.main .control button{
     padding: .4rem 1rem;
     font-size: 18px;
 }
@@ -133,6 +133,7 @@
 }
 .cont_slider .slide{
     width: 100%;
+    max-width: 100%;
 	display: flex;
 }
 .cont_slider .slide .slider{
