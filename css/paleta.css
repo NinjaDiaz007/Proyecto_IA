@@ -11,10 +11,16 @@
     transition: all .5s ease;
     background-color: white;
 }
+
+/* Clases para el fondo */
 .claro .fon-1{
     background-color: var(--morado);
 }
+.claro .fon-2{
+    background-color: var(--azul);
+}
 
+/* Clases para botones o enlaces */
 .claro .link-1{
     color: white;
 }
@@ -29,6 +35,7 @@
     background-color: var(--naranja);
 }
 
+/* Clases para el switch */
 .claro .lbl-switch{
     background-color: var(--azul);
 }
@@ -45,10 +52,13 @@
     transition: all .5s ease;
     color: white;
 }
+
+/* Clases para el fondo */
 .oscuro .fon-1{
     background-color: #1b1b1b;
 }
 
+/* Clases para los botones o enlaces */
 .oscuro .link-1{
     color: white;
 }
@@ -63,6 +73,7 @@
     background-color: var(--azul);
 }
 
+/* Clases para el switch */
 .oscuro .lbl-switch{
     background-color: var(--azul);
 }
@@ -70,6 +81,7 @@
     background-color: var(--naranja);
 }
 
+/* Clases para bordes */
 .oscuro .borde{
     border: 1px solid white;
 }

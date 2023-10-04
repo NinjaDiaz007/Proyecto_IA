@@ -1,7 +1,7 @@
 let cont_preguntas = document.getElementById("cont-preguntas");
 let siguiente = document.getElementById("siguiente");
 let anterior = document.getElementById("anterior");
-let guardar_enviar = document.getElementById("enviar");
+let guardar_enviar = document.getElementById("finality");
 
 let slider = document.querySelector(".slide");
 let sliderIndividual = document.querySelectorAll(".slider");
@@ -90,7 +90,6 @@ anterior.addEventListener('click', ()=>{
 });
 guardar_enviar.addEventListener('click', ()=>{
     if(contador === 6){
-        console.log(contador);
         contador = 1;
         slider.style.transform = "translate("+(-ancho*contador)+"px)";
         slider.style.transition = "transform .8s";
@@ -106,7 +105,7 @@ function PreguntasPantalla(){
     let i;
     let texto = document.querySelectorAll(".txt");
     
-    for(i = 0; i <= preguntas.length; i++){
+    for(i = 0; i <= preguntas.length-1; i++){
         texto[i].innerHTML = preguntas[i];
         //console.log(`Pregunta: ${preguntas[i]}`);
     }
