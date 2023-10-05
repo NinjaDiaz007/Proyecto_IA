@@ -110,6 +110,11 @@
     margin-right: 15px;
     margin-left: 2px;
 }
+.main .pregunta-boton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 .main .control{
     display: flex;
@@ -172,9 +177,70 @@
     cursor: pointer;
 }
 /*=============================================*/
+
 /*=============================================*/
+/*============== Carta Buenvenida =============*/
 /*=============================================*/
-/*=============================================*/
+.card {
+  background-color: white;
+  position: fixed;
+  top: 50%;
+  left: -50%;
+  transition: all .5s;
+  transform: translate(-50%, -50%);
+  width: 38%;
+  border-radius: 16px;
+  overflow: hidden;
+  -webkit-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+          box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.card-header {
+  width: 100%;
+  display: block;
+}
+
+.card-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid rgba(153, 153, 153, 0.383);
+}
+
+.card-body-img {
+  border: 5px solid white;
+  border-radius: 50%;
+  margin-top: calc(-48px - 5px);
+  background-color: white;
+  width: 50%;
+}
+
+.card-body-title {
+  margin-top: 2rem;
+  font-size: 1.8rem;
+}
+
+.card-body-text {
+  color: var(--dark-gray);
+  font-size: 1.6rem;
+  margin-top: 0;
+  margin-bottom: 2rem;
+}
+
+.card-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
 /*=============================================*/
 /*=============================================*/
 /*=============================================*/
@@ -187,6 +253,14 @@
 /*=============================================*/
 .none{
     display: none;
+}
+
+.btn-guardar{
+    display: block;
+    margin-top: 15px;
+    font-size: 20px;
+    padding: .5rem 1rem;
+    cursor: pointer;
 }
 /*=============================================*/
 
@@ -216,6 +290,15 @@
     }
     .main .respuesta button{
         font-size: 18px;
+    }
+
+    .card-header {
+        height: 160px;
+    }
+    .card-body-img {
+        width: 160px;
+        height: 160px;
+        margin-top: calc(-68px - 5px);
     }
 }
 /*=============================================*/

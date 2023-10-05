@@ -1,7 +1,8 @@
 let cont_preguntas = document.getElementById("cont-preguntas");
 let siguiente = document.getElementById("siguiente");
 let anterior = document.getElementById("anterior");
-let guardar_enviar = document.getElementById("finality");
+let finality = document.getElementById("finality");
+let card = document.getElementById("card");
 
 let slider = document.querySelector(".slide");
 let sliderIndividual = document.querySelectorAll(".slider");
@@ -73,12 +74,6 @@ siguiente.addEventListener("click", ()=>{
 		slider.style.transform = "translate("+(-ancho*contador)+"px)";
 	    slider.style.transition = "transform .8s";
         contador++;
-        
-        if(contador === 6){
-            anterior.classList.add("none");
-            siguiente.classList.add("none");
-            guardar_enviar.classList.remove("none");
-        }
 	}
 });
 anterior.addEventListener('click', ()=>{
@@ -88,16 +83,8 @@ anterior.addEventListener('click', ()=>{
 	    slider.style.transition = "transform .8s";
 	}
 });
-guardar_enviar.addEventListener('click', ()=>{
-    if(contador === 6){
-        contador = 1;
-        slider.style.transform = "translate("+(-ancho*contador)+"px)";
-        slider.style.transition = "transform .8s";
-        anterior.classList.remove("none");
-        siguiente.classList.remove("none");
-        guardar_enviar.classList.add("none");
-    }
-    
+finality.addEventListener('click', ()=>{
+    card.style.left = "50%";
 });
 
 // Funciones
