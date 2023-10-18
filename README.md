@@ -33,13 +33,13 @@ function PreguntasPantalla(){
 PreguntasPantalla();
 ```
 
-# Verci&#243;n 1.3
+# Verci&#243;n 2
 - Se a&#241;adio un carrusel para mostrar las preguntas (en bloques de 10 preguntas).
 - Se a&#241;adio un boton para guardar el contenido de las preguntas (Pendiente).
 - Se elimino la preguntas opci&#243;nes.
 - Funcionalidad a los botones (siguiente y anterio).
 
-# Verci&#243;n 1.4
+# Verci&#243;n 2.1
 - Se actualizo el codigo para generar el documento.
 ```javascript
 const guardarArchivoDeTexto = (contenido, nombre) => {
@@ -55,5 +55,5 @@ const guardarArchivoDeTexto = (contenido, nombre) => {
 - El menu de navegaci&#243;n (Funcionando).
 - El boton para guardar (Funcionando).
 
-# Vercion 1.5
+# Vercion 2.3
 - El boton para guardar el contenido de las preguntas (Funcionando).
