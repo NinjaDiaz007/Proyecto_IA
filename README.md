@@ -34,7 +34,26 @@ PreguntasPantalla();
 ```
 
 # Verci&#243;n 1.3
-- Se a&#241;adio un carrusel para mostrar las preguntas;
-- Se a&#241;adio un boton(Pendiente)
+- Se a&#241;adio un carrusel para mostrar las preguntas (en bloques de 10 preguntas).
+- Se a&#241;adio un boton para guardar el contenido de las preguntas (Pendiente).
 - Se elimino la preguntas opci&#243;nes.
 - Funcionalidad a los botones (siguiente y anterio).
+
+# Verci&#243;n 1.4
+- Se actualizo el codigo para generar el documento.
+```javascript
+const guardarArchivoDeTexto = (contenido, nombre) => {
+    const a = document.createElement("a");
+    const archivo = new Blob([contenido], { type: 'text/plain;charset=utf-8' });
+    const url = URL.createObjectURL(archivo);
+    a.href = url;
+    a.download = nombre;
+    a.click();
+    URL.revokeObjectURL(url);
+}
+```
+- El menu de navegaci&#243;n (Funcionando).
+- El boton para guardar (Funcionando).
+
+# Vercion 1.5
+- El boton para guardar el contenido de las preguntas (Funcionando).
