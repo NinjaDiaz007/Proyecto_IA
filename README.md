@@ -55,5 +55,5 @@ const guardarArchivoDeTexto = (contenido, nombre) => {
 - El menu de navegaci&#243;n (Funcionando).
 - El boton para guardar (Funcionando).
 
-# Vercion 2.3
+# Vercion 2.2
 - El boton para guardar el contenido de las preguntas (Funcionando).
