@@ -3,6 +3,7 @@ let siguiente = document.getElementById("siguiente");
 let anterior = document.getElementById("anterior");
 let finality = document.getElementById("finality");
 let card = document.getElementById("card");
+let reboot = document.getElementById("reboot");
 
 let slider = document.querySelector(".slide");
 let sliderIndividual = document.querySelectorAll(".slider");
@@ -86,6 +87,10 @@ anterior.addEventListener('click', ()=>{
 finality.addEventListener('click', ()=>{
     card.style.left = "50%";
 });
+
+reboot.addEventListener('click', ()=>{
+    location.reload();
+})
 
 // Funciones
 function PreguntasPantalla(){

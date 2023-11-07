@@ -1,0 +1,61 @@
+@media(max-width: 1050px){
+    .nav-hor{
+        padding: 0 6%;
+    }
+
+    /* Hero de Imagenes */
+    .hero{
+        height: 180px;
+    }
+    .hero .texto h1{
+        font-size: 45px;
+    }
+
+    /* Main de la pagina */
+    .main{
+        width: 80%;
+    }
+    .main h1{
+        font-size: 40px;
+    }
+    .main p{
+        font-size: 20px;
+    }
+    .main .respuesta button{
+        font-size: 18px;
+    }
+
+    /* Primera Card */
+    .card-header {
+        height: 60px;
+    }
+    .card-body-img {
+        width: 160px;
+        height: 160px;
+        margin-top: calc(-68px - 5px);
+    }
+
+    /* Segundo Card */
+    .rectangulo{
+        height: 290px;
+    }
+}
+
+/* Vercion movil o tableta */
+@media(max-width: 600px){
+    /* Segundo Card */
+    .card-2{
+        width: 100%;
+        top: 0;
+        left: 0;
+        transform: translate(-0%, -0%);
+    }
+    .card-2 .card-2-body .btn-controls{
+        flex-direction: column;
+        gap: 8px;
+    }
+    .rectangulo{
+        height: 100%;
+        width: 100%;
+    }
+}

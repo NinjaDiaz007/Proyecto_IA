@@ -1,0 +1,88 @@
+/* Ocultar objetos */
+.none{
+    display: none;
+}
+
+.btn-guardar{
+    display: block;
+    margin-top: 15px;
+    font-size: 20px;
+    padding: .5rem 1rem;
+    cursor: pointer;
+}
+
+/* Centrar Objetos */
+.center{
+    align-items: center;
+}
+
+/* Margenes */
+.mt-2{
+	margin-top: .5rem;
+}
+.mt-4{
+	margin-top: 1rem;
+}
+
+.mb-4{
+	margin-bottom: 1rem;
+}
+
+.ml-2{
+	margin-left: .5rem;
+}
+.ml-4{
+	margin-left: 1rem;
+}
+
+/* Anchura */
+.wd-2{
+	width: 20%;
+}
+.wd-4{
+	width: 40%;
+}
+.wd-10{
+	width: 100%;
+}
+
+.wd-d-1{
+	width: 8.3%;
+}
+.wd-d-2{
+	width: 16.6%;
+}
+.wd-d-3{
+	width: 24.9%;
+}
+.wd-d-4{
+	width: 33.2%;
+}
+.wd-d-5{
+	width: 41.5%;
+}
+.wd-d-6{
+	width: 50%;
+}
+.wd-d-7{
+	width: 58.1%;
+}
+
+/*========= Texto =========*/
+.txt-secung{
+	font-size: 30px;
+}
+
+/*=============================================*/
+/*=================== Listas ==================*/
+/*=============================================*/
+.lista-no{
+    list-style: octal;
+    margin-left: 10%;
+    font-size: 20px;
+    width: 84%;
+}
+.lista-no li h2{
+    margin-top: 10px;
+}
+/*=============================================*/

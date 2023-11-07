@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +7,11 @@
 
         <link rel="stylesheet" href="./css/style.css">
         <link rel="stylesheet" href="./css/paleta.css">
+        <link rel="stylesheet" href="./css/media_query.css">
+        <link rel="stylesheet" href="./css/clases_generales.css">
         <link rel="icon" href="./img/ITT_Logo.jpg">
+
+
     </head>
 
     <body class="claro" id="body">
@@ -22,7 +26,8 @@
             <nav class="nav-hor">
                 <div class="enlaces">
                     <a href="#" class="link-1">Inicio</a>
-                    <a href="#" class="link-1">Block</a>
+                    <a href="./block.html" class="link-1">Blog</a>
+                    <label for="btn-ayuda" class="link-1">Ayuda</label>
                 </div>
                 
                 <input type="checkbox" class="none" id="switch">
@@ -31,9 +36,9 @@
         </header>
 
         <main class="main">
-            <h1>Test Vocacional</h1>
+            <h1 class="center">Test Vocacional</h1>
             <p>
-                No sabes que estudis a continuaci&#243;n con el test vocacional podar ver 
+                No sabes que estudiar a continuaci&#243;n con el test vocacional podar ver 
                 que carreras son mas adecuadas para ti.
             </p>
 
@@ -120,10 +125,7 @@
                                 <button onclick="Precion_NO(10)">NO</button>
                             </div>
                         </div>
-                    </section>
 
-                    <!-- Segunda parte de las preguntas -->
-                    <section class="slider">
                         <div class="preguntas borde">
                             <h2 class="txt"></h2>
                             <div class="respuesta">
@@ -203,10 +205,7 @@
                                 <button onclick="Precion_NO(20)">NO</button>
                             </div>
                         </div>
-                    </section>
 
-                    <!-- Tercera Parte de la preguntas -->
-                    <section class="slider">
                         <div class="preguntas borde">
                             <h2 class="txt"></h2>
                             <div class="respuesta">
@@ -286,10 +285,7 @@
                                 <button onclick="Precion_NO(30)">NO</button>
                             </div>
                         </div>
-                    </section>
 
-                    <!-- Cuarta Parte de las Preguntas -->
-                    <section class="slider">
                         <div class="preguntas borde">
                             <h2 class="txt"></h2>
                             <div class="respuesta">
@@ -305,7 +301,10 @@
                                 <button onclick="Precion_NO(32)">NO</button>
                             </div>
                         </div>
-                
+                    </section>
+
+                    <!-- Segunda parte de las preguntas -->
+                    <section class="slider">
                         <div class="preguntas borde">
                             <h2 class="txt"></h2>
                             <div class="respuesta">
@@ -369,10 +368,7 @@
                                 <button onclick="Precion_NO(40)">NO</button>
                             </div>
                         </div>
-                    </section>
 
-                    <!-- Quinta Parte de las Preguntas -->
-                    <section class="slider">
                         <div class="preguntas borde">
                             <h2 class="txt"></h2>
                             <div class="respuesta">
@@ -452,10 +448,7 @@
                                 <button onclick="Precion_NO(50)">NO</button>
                             </div>
                         </div>
-                    </section>
 
-                    <!-- Sexta Parte de las Preguntas -->
-                    <section class="slider">
                         <div class="preguntas borde">
                             <h2 class="txt"></h2>
                             <div class="respuesta">
@@ -503,6 +496,18 @@
                                 <button onclick="Precion_NO(56)">NO</button>
                             </div>
                         </div>
+                    </section>
+
+                    <!-- Tercera Parte de la preguntas -->
+                    <section class="slider"></section>
+
+                    <!-- Cuarta Parte de las Preguntas -->
+                    <section class="slider"></section>
+
+
+                    <!-- Sexta Parte de las Preguntas -->
+                    <section class="slider">
+                        
 
                         <div class="pregunta-boton">
                             <button id="finality" class="link-2 btn-guardar">FInalizar</button>
@@ -548,21 +553,6 @@
                 <button id="siguiente" class="link-2"><a href="#slider">Siguiente</a></button>
             </div>
 
-            <!-- Carta para Descargar -->
-            <article class="card" id="card">
-                <img src="./img/bg-pattern-card.svg" alt="imagen header card" class="card-header">
-                <div class="card-body">
-                    <img src="./img/pikachu.gif" alt="imagen de vitoko" class="card-body-img">
-                    <h1 class="card-body-title">
-                        Victor charst
-                    </h1>
-                    <p class="card-body-text">London</p>
-                </div>
-                <div class="card-footer">
-                    <button id="enviar">Guardar y Enviar</button>
-                </div>
-            </article>
-
             <!--<div class="pregunta borde">
                 <h2>Te gustan las matemáticas?</h2>
                 <div class="respuesta">
@@ -575,8 +565,60 @@
             </div>-->
         </main>
 
+        <footer class="pie-pagina fon-1"></footer>
+
+        <!-- Carta para Descargar -->
+        <article class="card" id="card">
+            <img src="./img/bg-pattern-card.svg" alt="imagen header card" class="card-header">
+            <div class="card-body">
+                <img src="./img/pikachu.gif" alt="imagen de vitoko" class="card-body-img">
+                <h1 class="card-body-title"></h1>
+                <p class="card-body-text">Gracias por contestar este test dale enviar para recibir el resultado</p>
+            </div>
+            <div class="card-footer">
+                <button class="mt-4 mb-4 link-2" id="enviar">Enviar</button>
+            </div>
+        </article>
+
+        <!-- Monstar el resultado -->
+        <article class="card-2 fon-3">
+            <img src="./img/bg-pattern-card.svg" alt="imagen header card" class="card-header">
+
+            <div class="card-2-body">
+                <div class="btn-controls">
+                    <input type="file" id="fileInput" style="display:none;">
+                    <label for="fileInput" class="lbl-file link-2" id="lbl-
+                        file">Seleciona el Archivo</label>
+                    <button onclick="selectFile()" class="lbl-file link-2">Mostrar Contenido</button>
+                </div>
+                    
+
+                <div class="rectangulo">
+                    <canvas id="graphi"></canvas>
+                </div>
+
+                <button id="reboot" class="lbl-file link-2">Finalizar</button>
+            </div>
+        </article>
+
+        <!-- Menu de ayuda -->
+        <input type="checkbox" id="btn-ayuda" class="none">
+        <section class="form-ayuda fon-1">
+            <h1>Ayuda</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><br>
+            <button class="link-2">Ok</button>
+        </section>
+
+
         <script src="./js/main.js"></script>
         <script src="./js/switch.js"></script>
+        <script src="./js/chart.min.js"></script>
+        <script src="./js/leer_texto.js"></script>
         <script src="./js/guardarArchivo.js"></script>
         <script src="./js/evento_botones.js"></script>
     </body>

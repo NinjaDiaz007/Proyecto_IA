@@ -15,9 +15,13 @@
 /* Clases para el fondo */
 .claro .fon-1{
     background-color: var(--morado);
+    color: white;
 }
 .claro .fon-2{
     background-color: var(--azul);
+}
+.claro .fon-3{
+    background-color: white;
 }
 
 /* Clases para botones o enlaces */
@@ -56,6 +60,9 @@
 /* Clases para el fondo */
 .oscuro .fon-1{
     background-color: #1b1b1b;
+}
+.oscuro .fon-3{
+    background-color: #3b3b3b;
 }
 
 /* Clases para los botones o enlaces */
