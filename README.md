@@ -39,7 +39,7 @@ PreguntasPantalla();
 ```
 
 # Verci&#243;n 2.0
-En la versión 2.0, hemos dado un gran paso en la evolución del test vocacional:
+En la versión 2.0, se a dado un gran paso en la evolución del test vocacional:
 
 - Introdujimos un carrusel para mostrar las preguntas en bloques de 10, mejorando la navegación. 
 - Implementamos funcionalidad a los botones de "Siguiente" y "Anterior" para facilitar la exploración de las preguntas.
