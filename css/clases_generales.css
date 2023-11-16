@@ -76,13 +76,25 @@
 /*=============================================*/
 /*=================== Listas ==================*/
 /*=============================================*/
-.lista-no{
+.lista-oc{
     list-style: octal;
     margin-left: 10%;
     font-size: 20px;
     width: 84%;
 }
-.lista-no li h2{
+.lista-oc li h2{
     margin-top: 10px;
+}
+
+.lista-no{
+	list-style: none;
+	font-size: 20px;
+	margin-left: 6%;
+	margin-top: 2%;
+	width: 94%;
+}
+.lista-no li{
+	margin-bottom: 2%;
+	text-align: justify;
 }
 /*=============================================*/

@@ -38,6 +38,12 @@
 .claro .link-2:hover{
     background-color: var(--naranja);
 }
+.claro .link-3{
+    background-color: var(--azul);
+}
+.claro .link-3:hover{
+    background-color: var(--naranja);
+}
 
 /* Clases para el switch */
 .claro .lbl-switch{
@@ -93,3 +99,10 @@
     border: 1px solid white;
 }
 /*=============================================*/
+
+.link-default{
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(158deg) brightness(103%) contrast(101%);
+}
+.link-default:hover{
+    filter: invert(55%) sepia(56%) saturate(5153%) hue-rotate(337deg) brightness(104%) contrast(86%);
+}
