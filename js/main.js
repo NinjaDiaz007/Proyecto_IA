@@ -103,3 +103,7 @@ function PreguntasPantalla(){
     }
 }
 PreguntasPantalla();
+
+function Cerrar_Modal(){
+    card.style.left = "-50%";
+}

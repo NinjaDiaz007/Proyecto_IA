@@ -66,9 +66,11 @@
 /* Clases para el fondo */
 .oscuro .fon-1{
     background-color: #1b1b1b;
+    color: white;
 }
 .oscuro .fon-3{
     background-color: #3b3b3b;
+    color: white;
 }
 
 /* Clases para los botones o enlaces */

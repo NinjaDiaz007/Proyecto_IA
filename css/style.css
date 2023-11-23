@@ -201,7 +201,6 @@
 /*============== Carta Buenvenida =============*/
 /*=============================================*/
 .card {
-  background-color: white;
   position: fixed;
   top: 50%;
   left: -50%;
@@ -247,7 +246,6 @@
 }
 
 .card-body-text {
-  color: var(--dark-gray);
   font-size: 1.6rem;
   margin-top: 0;
   margin-bottom: 1.6rem;

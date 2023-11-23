@@ -1,19 +1,13 @@
 let enviar = document.getElementById("enviar");
+let card2 = document.getElementById("card-2")
 let cont = 1;
 
 let Lista_Respuesta = new Array();
 
 enviar.addEventListener('click', ()=>{
-    if(contador === 6){
-        contador = 1;
-        slider.style.transform = "translate("+(-ancho*contador)+"px)";
-        slider.style.transition = "transform .8s";
-        card.style.left = "-50%"
-        guardarArchivoDeTexto(Lista_Respuesta, "informacion.txt");
-        Lista_Respuesta.length = [];
-        console.log(Lista_Respuesta(0));
-    }
-    
+    guardarArchivoDeTexto(Lista_Respuesta, "informacion.txt");
+    Cerrar_Modal();
+    card2.style.left = "50%";
 });
 
 // Botones que son "si"
