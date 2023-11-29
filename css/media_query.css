@@ -5,10 +5,10 @@
 
     /* Hero de Imagenes */
     .hero{
-        height: 180px;
+        height: 190px;
     }
     .hero .texto h1{
-        font-size: 45px;
+        font-size: 46px;
         text-align: center;
     }
 
@@ -20,7 +20,7 @@
         font-size: 40px;
     }
     .main p{
-        font-size: 20px;
+        font-size: 22px;
     }
     .main .respuesta button{
         font-size: 18px;
@@ -47,12 +47,24 @@
 
 /* Vercion movil o tableta */
 @media(max-width: 600px){
+    /* Menu de Navegacion */
+    .nav-nav{
+        padding: 0% 4%;
+    }
+    .nav-nav .lbl-switch{
+        width: 60px;
+        height: 28px;
+    }
+    .nav-nav .lbl-switch::after{
+        width: 20px;
+        height: 20px;
+    }
+
     /* Segundo Card */
     .card-2{
         width: 100%;
-        top: 0;
-        left: 0;
-        transform: translate(-0%, -0%);
+        top: 0%;
+        left: -50%;
     }
     .card-2 .card-2-body .btn-controls{
         flex-direction: column;

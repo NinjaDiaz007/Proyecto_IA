@@ -90,7 +90,7 @@ finality.addEventListener('click', ()=>{
 
 reboot.addEventListener('click', ()=>{
     location.reload();
-})
+});
 
 // Funciones
 function PreguntasPantalla(){

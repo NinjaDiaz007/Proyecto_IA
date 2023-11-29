@@ -45,6 +45,10 @@
     background-color: var(--naranja);
 }
 
+.claro .bars--menu span{
+    background-color: var(--azul);
+}
+
 /* Clases para el switch */
 .claro .lbl-switch{
     background-color: var(--azul);
