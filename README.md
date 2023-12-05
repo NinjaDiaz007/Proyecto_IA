@@ -2,7 +2,7 @@
 Se estara realizando el dise&#241;o para una pagina web para un test vocacional que se estara usando los lenguages de programaci&#243;n _**HTML, CSS y JavaScript**_. En las siguientes verciones que se a&#241;adier&#243;n o se eliminaron ciertos elementos en la paguina pero se anunciaran a continuaci&#243;n que se realizo en cada verci&#243;n.
 
 ---
-### Pagina ya en funcionamiento [ir a la pagina](https://ninjadiaz007.github.io/Blog/docs/Proyecto_IA/index.html)
+### Pagina ya en funcionamiento [ir a la pagina](https://ninjadiaz007.github.io/Blog/docs/ProyectoIA/index.html)
 ---
 
 ## Verción 1.0
@@ -110,5 +110,5 @@ En la versión 3.2, se implementaron mejoras adicionales y características nuev
 - Se actualizó el botón del switch para guardar el modo oscuro en el almacenamiento local, asegurando que el estado actual se conserve al recargar la página.
 
 ---
-### Pagina ya en funcionamiento [ir a la pagina](https://ninjadiaz007.github.io/Blog/docs/Proyecto_IA/index.html)
+### Pagina ya en funcionamiento [ir a la pagina](https://ninjadiaz007.github.io/Blog/docs/ProyectoIA/index.html)
 ---
